@@ -46,7 +46,7 @@ jobs:
     needs: terraform
     runs-on: ubuntu-latest
     environment:
-      name: deploy
+      name: terraform-workflow-approval
       steps:
         - name: Checkout
           uses: actions/checkout@v3
