@@ -9,7 +9,6 @@ on:
 jobs:
   terraform:
   needs: Terraform
-    name: "deploy"
     runs-on: ubuntu-latest
     environment: terraform-workflow-approval
     steps:
