@@ -6,4 +6,3 @@
 /terraform.tfvars
 /variable.tf
 /.terraform
-/key_pair.tf
