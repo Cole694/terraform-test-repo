@@ -18,9 +18,9 @@ resource "aws_instance" "prod" {
 }
 
 resource "aws_instance" "imported-ec2" {
-  ami                    = "ami-07251f912d2a831a3"
-  instance_type          = var.instance_type["machine1"]
-  provider               = aws.ohio
+  ami           = "ami-07251f912d2a831a3"
+  instance_type = var.instance_type["machine1"]
+  provider      = aws.ohio
 
   tags = {
     Name = "imported-ec2"
@@ -28,9 +28,9 @@ resource "aws_instance" "imported-ec2" {
 }
 
 resource "aws_instance" "test-ec2" {
-  ami = data.aws_ami.app_ami.id
+  ami           = data.aws_ami.app_ami.id
   instance_type = var.instance_type["machine1"]
-  tags = local.other_tags
+  tags          = local.other_tags
 }
 
 output "timestamp" {

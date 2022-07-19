@@ -4,7 +4,7 @@ locals {
     service = "backend"
   }
   other_tags = {
-    creator = "cole"
+    creator     = "cole"
     description = "Test ec2-instance"
   }
   time     = formatdate("DD MMM YYYY hh:mm:ZZZ", timestamp())
