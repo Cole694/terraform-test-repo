@@ -1,0 +1,8 @@
+/.terraform.lock.hcl
+/id_rsa.pub
+/lock-state-sleep.tf
+/terraform.tfstate
+/terraform.tfstate.backup
+/terraform.tfvars
+/variable.tf
+/.terraform
